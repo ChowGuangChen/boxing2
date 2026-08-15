@@ -1,0 +1,19 @@
+*{
+    box-sizing:border-box;
+/*    margin:0px; */
+}
+
+h1{
+    font-size:60px;
+    text-align:center;
+}
+
+div#start_stop{
+    flex-direction:row;
+    gap:20px;
+    justify-content:center;
+}
+button{
+    font-size:50px;
+    flex-grow:1;
+}
