@@ -13,5 +13,29 @@
         <button id="start_button">start</button>
         <button id="stop_button">stop</button>
     </div>
+    <div id="speed">
+        <label for="speed">Speed: </label><input type="range" min="1" max="10" step="0.1" oninput="updateSpeedSliderValue(this.value)" value="1" id="speed_slider"><span id="speed_value">1</span>
+    </div>
+    <div id="interval">
+        <label for="interval">Interval:     </label>
+        <span id="interval_slider">
+            <input type="range" min="0" max="10" step="0.1" oninput="updateIntervalSliderLowerValue(this.value)" value="0" id="interval_slider_lower">
+            <input type="range" min="0" max="10" step="0.1" oninput="updateIntervalSliderUpperValue(this.value)" value="5" id="interval_slider_upper">
+        </span>
+        <span id="min_interval_value" style="font-size:30px;">0</span><span style="font-size:30px;">  -   </span><span id="max_interval_value" style="font-size:30px;">5</span>
+    </div>
+    <div id="combos">
+        <div class="combo_box">
+            <input type="checkbox" checked class="combo_checkbox">
+            <input type="text" placeholder="type a combo" class="combo_textbox" value="1">
+            <button class="delete_combo">delete</button>
+        </div>
+        <div class="combo_box">
+            <input type="checkbox" checked class="combo_checkbox">
+            <input type="text" placeholder="type a combo" class="combo_textbox" value="1 2">
+            <button class="delete_combo">delete</button>
+        </div>
+        <button id="add_combo">+</button>
+    </div>
 </body>
 </html>
